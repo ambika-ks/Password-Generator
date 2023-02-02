@@ -90,6 +90,16 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  var len=parseInt( prompt("Enter the Length of the password Needed (between 8 and 128"));
+  if (len<8 || len >128){
+    alert("The Length of the password must be within the Limit 8-128, try Again!!");
+  }
+  else{
+  var lowerCase=confirm("Do you like to have Lower case Letters in your password ?");
+  var upperCase=confirm("Do you like to have Upper case Letters in your password ?");
+  var SplChar=confirm("Do you like to have Special Characters in your password ? ");
+  var number=confirm("Do you like to have numbers in your password? ");
+  }
 
 }
 
@@ -98,13 +108,23 @@ function getRandom(arr) {
 
 }
 
+
+
+
 // Function to generate password with user input
 function generatePassword() {
+  getPasswordOptions();
 
 }
 
+
+
+
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
+
+
+
 
 // Write password to the #password input
 function writePassword() {
@@ -113,6 +133,10 @@ function writePassword() {
 
   passwordText.value = password;
 }
+
+
+
+
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
