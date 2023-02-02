@@ -10,7 +10,7 @@ The password can include special characters. If you’re unfamiliar with these, 
 
 The following image shows the web application's appearance and functionality:
 
-![password generator demo](./assets/05-javascript-challenge-demo.png)
+![password generator demo](./assets/Password-generator.png)
 
 
 * Generate a password when the button is clicked
@@ -23,6 +23,7 @@ The following image shows the web application's appearance and functionality:
       * Numeric
       * Special characters ($@%&*, etc)
   * Code should validate for each input and at least one character type should be selected
-  * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
+  * Once prompts are answered then the password should be generated and displayed in an alert or written to the page.
 
+---------------------------------------------
 
